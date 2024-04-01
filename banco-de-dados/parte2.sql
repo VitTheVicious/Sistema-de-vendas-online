@@ -2,16 +2,16 @@ use sistema_online;
 
 -- Tabela Cliente
 
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Vítor Rehem Sá', 'Noruega, Bø', 'vitor.rehem@gmail.com', 11984126136, "2007-17-10");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Marcio Reis', 'Brasil, São paulo', 'marcio.reis@yahoo.com', 11973884953, "2001-14-05");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Justin Diez', 'Paises baixos, Holanda', 'justin@gmail.com', 19989470533, "2006-14-07");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Vítor Rehem Sá', 'Noruega, Bø', 'vitor.rehem@gmail.com', 11984126136, "2007-10-17");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Marcio Reis', 'Brasil, São paulo', 'marcio.reis@yahoo.com', 11973884953, "2001-05-14");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Justin Diez', 'Paises baixos, Holanda', 'justin@gmail.com', 19989470533, "2006-07-14");
 insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Deus', 'Céu', 'deusreal@gmail.com', 80085, "0001-01-01");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Mike Winchester', 'USA, Texas', 'mikewinchest@outlook.com', 13985177549, "1997-04-02");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Mike Winchester', 'USA, Texas', 'mikewinchest@outlook.com', 13985177549, "1997-02-04");
 insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Adriana Pereira Sá', 'Brasil, São Paulo', 'drikadriana@outlook.com', 11973242110, "1975-09-09");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Mariana Campos', 'Argentina, Ushuaia', 'maricampo@yahoo.com', 18969334518, "1989-12-07");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Samuel Santos', 'México, Mexico city', 'sasaeultos@gmail.com', 11981202421, "2004-17-04");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Rafael Soares', 'Brasil, São Paulo', 'rafafa@outlook.com', 12979768652, "1995-24-06");
-insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Fábio Araujos', 'Brasil, Bahia', 'ararabio@gmail.com', 15979286654, "1989-19-12");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Mariana Campos', 'Argentina, Ushuaia', 'maricampo@yahoo.com', 18969334518, "1989-07-12");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Samuel Santos', 'México, Mexico city', 'sasaeultos@gmail.com', 11981202421, "2004-04-17");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Rafael Soares', 'Brasil, São Paulo', 'rafafa@outlook.com', 12979768652, "1995-06-24");
+insert into cliente(id_cliente, nome, endereço, email, celular, data_nascimento) values(null, 'Fábio Araujos', 'Brasil, Bahia', 'ararabio@gmail.com', 15979286654, "1989-12-19");
 
 update cliente
 set endereço = 'Noruega, Bø'
@@ -29,8 +29,7 @@ update cliente
 set endereço = 'França, Itália'
 where id_cliente = 2;
 
-delete from cliente where id_cliente = 4;
-delete from cliente where id_cliente = 5;
+
 
 -- Tabela Produtos
 
@@ -61,40 +60,38 @@ update produtos
 set quant_estoque = 432
 where id_produto = 4;
 
-delete from produtos where id_produto = 6;
-delete from produtos where id_produto = 9;
+
 
 -- Tabela Pedidos
 
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(9, null, "2024-27-03", 130.99, "2024-29-03"); -- 1 bicicleta
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(4, null, "2024-17-04", 12.00, "2024-19-04"); -- 2 luvas
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(10, null, "2023-12-02", 119.97, "2023-15-02"); -- 3 cereais
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(2, null, "2024-29-06", 29.75, "2024-03-07"); -- 5 leites
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(6, null, "2024-09-12", 151.50, "2024-14-12"); -- 10 miojos
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(5, null, "2024-29-12", 46.18, "2025-02-01"); -- 2 chinelos
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(8, null, "2024-30-05", 76.80, "2024-02-06"); -- 4 bananass
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(7, null, "2024-25-09", 5.99, "2024-28-09"); -- 1 maça
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(1, null, "2024-19-10", 60.00, "2024-23-10"); -- 3 detergemtes
-insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(3, null, "202427-03", 21.00, "-202429-03"); -- 2 esponjas
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(9, null, "2024-03-27", 130.99, "2024-03-29"); -- 1 bicicleta
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(4, null, "2024-04-17", 12.00, "2024-04-19"); -- 2 luvas
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(10, null, "2023-02-12", 119.97, "2023-02-15"); -- 3 cereais
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(2, null, "2024-06-29", 29.75, "2024-07-03"); -- 5 leites
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(6, null, "2024-12-09", 151.50, "2024-12-14"); -- 10 miojos
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(5, null, "2024-12-29", 46.18, "2025-01-02"); -- 2 chinelos
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(8, null, "2024-05-30", 76.80, "2024-06-02");-- 4 bananass
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(7, null, "2024-09-25", 5.99, "2024-09-28"); -- 1 maça//
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(1, null, "2024-10-19", 60.00, "2024-10-23"); -- 3 detergemtes
+insert into pedidos(id_cliente, id_pedidos, data_compra, valor_total, data_estimada) values(3, null, "2024-03-27", 21.00, "2024-03-29"); -- 2 esponjas
 
 update pedidos
-set data_estimada = "04/07/2024"
+set data_estimada = "2024-07-04"
 where id_pedidos = 4;
 
 update pedidos
-set data_estimada = "13/12/2024"
+set data_estimada = "2024-12-13"
 where id_pedidos = 5;
 
 update pedidos
-set data_estimada = "20/10/2024"
+set data_estimada = "2024-10-20"
 where id_pedidos = 9;
 
 update pedidos
-set data_estimada = "13/02/2024"
+set data_estimada = "2024-02-13"
 where id_pedidos = 3;
 
-delete from pedidos where id_pedidos = 2;
-delete from pedidos where id_pedidos = 6;
+
 
 -- Tabela Itens
 
@@ -127,3 +124,12 @@ where id_pedidos = 7;
 
 delete from itens where id_pedidos = 2;
 delete from itens where id_pedidos = 6;
+
+delete from pedidos where id_pedidos = 2;
+delete from pedidos where id_pedidos = 6;
+
+delete from produtos where id_produto = 6;
+delete from produtos where id_produto = 9;
+
+delete from cliente where id_cliente = 4;
+delete from cliente where id_cliente = 5;
